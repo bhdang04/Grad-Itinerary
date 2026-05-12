@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian Dang • UC Irvine Graduation 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">@
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="grad-year">Class of 2026</div>
+            <h1>Brian Dang</h1>
+            <p class="subtitle">University of California, Irvine</p>
+            <div class="date-highlight">June 12–14, 2026</div>
+        </div>
+        <div class="scroll-indicator">Scroll to view schedule</div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Weekend Itinerary</h2>
+        <div class="timeline">
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Thursday</div>
+                    <div class="time">June 12 • 12:00 PM</div>
+                </div>
+                <div class="event-details">
+                    <h3>XFish AYCE Lunch</h3>
+                    <div class="event-location">Buena Park</div>
+                    <p class="event-note">Let's kick off the weekend with unlimited sushi!</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Thursday</div>
+                    <div class="time">June 12 • 9:30 PM</div>
+                </div>
+                <div class="event-details">
+                    <h3>Bars Night Out</h3>
+                    <div class="event-location">Newport Beach / Huntington Beach</div>
+                    <div class="options">
+                        <span class="option-tag">Heat OC</span>
+                        <span class="option-tag">Bungalow (HB)</span>
+                        <span class="option-tag">Newport</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Friday</div>
+                    <div class="time">June 13 • 11:30 AM</div>
+                </div>
+                <div class="event-details">
+                    <h3>Bottomless Mimosa Brunch</h3>
+                    <div class="event-location">Location TBD</div>
+                    <p class="event-note">Recovery brunch with unlimited mimosas ✨</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Friday</div>
+                    <div class="time">June 13 • 9:00 PM</div>
+                </div>
+                <div class="event-details">
+                    <h3>WeHo Clubbing</h3>
+                    <div class="event-location">West Hollywood</div>
+                    <p class="event-note">Night out in the city!</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Saturday</div>
+                    <div class="time">June 14 • 8:30 AM</div>
+                </div>
+                <div class="event-details">
+                    <h3>Graduation Ceremony</h3>
+                    <div class="event-location">UC Irvine</div>
+                    <div class="important-note">
+                        <strong>Family & Close Friends:</strong> Ceremony starts at 8:30 AM<br>
+                        <strong>Everyone Else:</strong> Join us around 11:30 AM
+                    </div>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="event-date">
+                    <div class="day">Saturday</div>
+                    <div class="time">June 14 • 9:00 PM</div>
+                </div>
+                <div class="event-details">
+                    <h3>After Party</h3>
+                    <div class="event-location">Location TBD</div>
+                    <p class="event-note">Celebrating the official grad! (Tentative)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp-section">
+        <h2 class="section-title">RSVP</h2>
+        <div class="rsvp-content">
+            <p class="rsvp-text">
+                Please let me know which events you'll be joining!
+            </p>
+            
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">Which events can you make? *</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="xfish-lunch">
+                            <span>XFish AYCE Lunch (Thu 12 PM)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="bars-night">
+                            <span>Bars Night Out (Thu 9:30 PM)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="mimosa-brunch">
+                            <span>Bottomless Mimosa Brunch (Fri 11:30 AM)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="weho-clubbing">
+                            <span>WeHo Clubbing (Fri 9 PM)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="graduation">
+                            <span>Graduation Ceremony (Sat 8:30 AM / 11:30 AM)</span>
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="events" value="after-party">
+                            <span>After Party (Sat 9 PM - Tentative)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes / Questions</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit RSVP</button>
+            </form>
+
+            <p class="form-note">* Required fields</p>
+            <p class="event-note" style="margin-top: 1.5rem; opacity: 0.8;">
+                Deadline: June 1, 2026
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Can't wait to celebrate with you! 🎓</p>
+        <p style="margin-top: 1rem;">Questions? Reach out to Brian</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for indicator
+        document.querySelector('.scroll-indicator').addEventListener('click', function() {
+            document.querySelector('.section').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Form submission handler
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                events: formData.getAll('events'),
+                dietary: formData.get('dietary'),
+                notes: formData.get('notes')
+            };
+
+            // Validate at least one event is selected
+            if (data.events.length === 0) {
+                alert('Please select at least one event you can attend.');
+                return;
+            }
+
+            // Log data to console (for testing)
+            console.log('RSVP Data:', data);
+
+            // TODO: Send data to your backend or Google Sheets
+            // Option 1: Google Forms (recommended for simplicity)
+            // Create a Google Form and use its pre-filled URL format
+            
+            // Option 2: Google Sheets API
+            // Send data directly to a Google Sheet
+            
+            // Option 3: Form service like Formspree, Basin, or Netlify Forms
+            
+            // For now, show success message
+            const form = this;
+            const successMessage = document.createElement('div');
+            successMessage.className = 'success-message';
+            successMessage.innerHTML = `
+                <h3 style="margin-bottom: 0.5rem;">Thank you for your RSVP!</h3>
+                <p>I've received your response and can't wait to celebrate with you!</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">You selected: ${data.events.length} event(s)</p>
+            `;
+            
+            form.style.display = 'none';
+            form.parentElement.appendChild(successMessage);
+
+            // UNCOMMENT AND CONFIGURE ONE OF THESE OPTIONS:
+            
+            // OPTION 1: Send to Google Form (replace with your form URL)
+            /*
+            const googleFormURL = 'YOUR_GOOGLE_FORM_URL';
+            window.open(googleFormURL, '_blank');
+            */
+
+            // OPTION 2: Send to Formspree or similar service
+            /*
+            fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Show success message
+                } else {
+                    alert('There was an error submitting your RSVP. Please try again.');
+                }
+            });
+            */
+
+            // OPTION 3: Send to your own backend
+            /*
+            fetch('/api/rsvp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).then(response => response.json())
+              .then(data => {
+                  // Handle success
+              });
+            */
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.event').forEach(event => {
+            event.style.animationPlayState = 'paused';
+            observer.observe(event);
+        });
+    </script>
+</body>
+</html>
