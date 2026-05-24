@@ -224,8 +224,29 @@
             
             // OPTION 1: Send to Google Form (replace with your form URL)
             
-            const googleFormURL = 'https://script.google.com/macros/s/AKfycby4fuT-C4__pvbjh4dXADkHzrr0sGizVJV_sPGyYteIQtza5qsMBW5_u4HIsmlxn6DabA/exec'; 
-            window.open(googleFormURL, '_blank');
+            const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSdKWpEKv3F0Rm0BqCH_STxyE1tHcC8T83cKYQ1MHtBIqFe8jg/formResponse';
+
+fetch(googleFormURL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({
+        'entry.XXXXXXXXX': data.name,
+        'entry.XXXXXXXXX': data.phone,
+        'entry.XXXXXXXXX': data.events.join(', '),
+        'entry.XXXXXXXXX': data.notes
+    })
+})
+.then(() => {
+    console.log('RSVP submitted successfully');
+
+    window.location.href = 'thankyou.html';
+})
+.catch(error => {
+    console.error('Error:', error);
+});
             
 
             // OPTION 2: Send to Formspree or similar service
